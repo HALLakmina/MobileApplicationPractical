@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "LoginApp",
-    "slug": "LoginApp",
+    "name": "Study Planner",
+    "slug": "Study Planner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
