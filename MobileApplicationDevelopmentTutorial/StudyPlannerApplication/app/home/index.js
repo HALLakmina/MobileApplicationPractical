@@ -1,18 +1,28 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { FlatList } from 'react-native-web'
+import React, { useContext } from 'react'
+import { FlatList, ScrollView } from 'react-native-web'
 import NoteBox from '../../components/NoteBox'
+import MainContext from '../../ContextAPI/AppMainContext'
 
 const HomeScreen = () => {
+  const {dayPlans} = useContext(MainContext)
+
   return (
-    <View style={styles.homeScreen}>
-      <Text style={styles.mainTitle}>Welcome Back</Text>
-      <View>
-        <Text style={styles.subTitle}>To day planes</Text>
-        <FlatList />
-        <NoteBox/>
+    <ScrollView>
+      <View style={styles.homeScreen}>
+        <Text style={styles.mainTitle}>Welcome Back</Text>
+        <View>
+          <Text style={styles.subTitle}>To day planes</Text>
+          <FlatList 
+            data={dayPlans}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
+              <NoteBox details={item}/>
+            )}
+            />
+        </View>
       </View>
-    </View>
+    </ScrollView>
   )
 }
 

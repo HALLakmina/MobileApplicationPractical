@@ -1,0 +1,38 @@
+{
+  "dayPlans": [
+    {
+      "title": "ICT Class",
+      "note": "fsjhfbdb jfhjkslfhekrervne lkfjdvldf\nsdfskdljfskdnv fjkvdfkjvdlfkvmx fvdmvdf.v\ndfldfkdlm",
+      "date": {
+        "year": 2024,
+        "month": 12,
+        "day": 1
+      },
+      "categoryId": "378f",
+      "id": "673b"
+    },
+    {
+      "title": "Technology Leachur",
+      "note": "sfhkshfweshfie \ndsofksdofoskdof djsfsd,fjsdfsdkmnskd",
+      "date": {
+        "year": 2024,
+        "month": 12,
+        "day": 31
+      },
+      "categoryId": "378f",
+      "id": "6122"
+    }
+  ],
+  "category": [
+    {
+      "title": "Class",
+      "color": "#00b8ff",
+      "id": "f125"
+    },
+    {
+      "id": "378f",
+      "title": "Lectuer",
+      "color": "#459f40"
+    }
+  ]
+}
